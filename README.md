@@ -1,4 +1,4 @@
-# Quick Poll - A REST API Demo for a quest App
+# Quick Poll - A REST API Demo
 
 ## Lista de resources
 
