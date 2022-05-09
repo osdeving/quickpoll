@@ -6,12 +6,13 @@ import javax.persistence.*;
 
 @Entity
 @Data
-public class Option {
+public class Vote {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="OPTION_ID")
+    @Column(name="VOTE_ID")
     private Long id;
 
-    @Column(name="OPTION_VALUE")
-    private String value;
+    @ManyToOne
+    @JoinColumn(name="OPTION_ID")
+    private Option option;
 }
